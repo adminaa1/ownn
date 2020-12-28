@@ -1,0 +1,194 @@
+Dùng thẻ <ul> kết hợp với thẻ <li>. Cấu trúc:
+<ul type=Disc/ square / circle >
+<li> Mục 1 </li>
+<li> Mục 2 </li>
+…
+</ul>
+b. Danh sách có số thứ tự
+Dùng thẻ <ol> kết hợp với thẻ <li>.
+Cú pháp:
+<ol type=giá trị>
+<li> Mục 1 </li>
+<li> Mục 2 </li>
+…
+</ol>
+Bước 1: Tạo một điểm đánh dấu cần liên kết tới theo cú pháp:
+<A name= “name”> </A>
+Trong đó: ”name” là tên tự đặt đƣợc dùng để chỉ ra vị trí cần liên kết tới trên trang Web.
+Bước 2: Tạo một liên kết đến điểm vừa tạo đánh dấu ở bước 1.
+<A href=”# name”> Văn bản (hoặc hình ảnh <img src = "graph.jpg">) đại diện cho mối
+liên kết </A>
+2.5.2. Liên kết ngoài trang
+ Nếu 2 file cùng nằm trong một thƣ mục thì cú pháp là:
+<a href= “File name”> Văn bản (hoặc hình ảnh <img src = "graph.jpg">) đại diện cho
+mối liên kết </a>
+Ví dụ: Để chuyển từ chương 1 sang chương 2 (chƣơng 2 và chƣơng 1 cùng nằm trong 1
+Folder) ta dùng:<a href= “chuong2.htm”> Chƣơng 2</a>
+Ðể liên kết tới một trang Web khác trên Internet ta dùng cú pháp sau:
+<a href = "URL"> Văn bản (hoặc hình ảnh <img src = "graph.jpg">) đại diện cho mối
+liên kết </a>
+Cú pháp:
+<EMBED
+SRC="đƣờngdẫn/tentepnhac.morong" WIDTH="…"
+HEIGHT="…"
+AUTOSTART="false/True"
+LOOP="false/True">
+<TABLE border=“…” align= “Left/Rignt/Center” Width= “…%” >
+<Caption>Tiêu đề cho bảng</caption>
+<TR><TH>Tiêu đề cột 1</TH><TH>Tiêu đề cột 2</TH>......</TR>
+<TR><TD> Dữ liệu ô 1 </TD><TD> Dữ liệu ô 2 </TD>......</TR>
+<TR><TD>.....................</TD><TD>.....................</TD>......</TR>
+..........
+</TABLE>
+<Html>
+<Head>
+<Title> Ví dụ tạo Form </Title>
+<meta http-equiv="content-type" content="text/html; charset ="utf-8">
+<meta name="keywords" content="HTML">
+
+</Head>
+<Body>
+<Form ALIGN="center" Method="Post" >
+<Table>
+<caption> <b>ĐĂNG KÍ THÀNH VIÊN</b></caption>
+<tr><td>Tên đăng nhập:</td><td> <input type="text" name= "user"></td></tr>
+<tr><td> Mật khẩu: </td><td><input type="password" name= "pass"></td></tr>
+<tr><td>Giới tính:</td> <td><input type="Radio" name= "gioitinh1" value="Nam
+checked > Nam
+<input type="Radio" name= "gioitinh2" value="Nữ"> Nữ </td></tr>
+<tr><td> Nghề nghiệp:</td><td>Select name= "nghenghiep" size="1">
+<option> Giáo viên </option>
+<option> Bác sỹ </option>
+<option> Phi công </option>
+<option> Tự do </option>
+</select> </td></tr>
+<tr><td> Sở thích:</td> <td><input type="checkbox" name= "sothich1" checked > Âm
+nhạc</td></tr>
+<tr><td>&nbsp;&nbsp;</td> <td><input type="checkbox" name= "sothich2">
+Bơi</td></tr>
+<tr><td>&nbsp;&nbsp;</td> <td><input type="checkbox" name= "sothich3"> Đọc
+truyện</tr>
+<tr><td>Tạo tài khoản: &nbsp;&nbsp </td> <td><input type="button" name=
+"Taotaikhoan" Value="Tạo tài khoản">&nbsp;&nbsp Xóa:&nbsp;&nbsp <input
+type="button" name= "xoa" value="Xóa"> </td></tr>
+</Table>
+</form>
+</Body>
+</Html>
+body {
+ background-color:cyan;
+ }
+h1 {
+ background-color:red;
+ }
+h2 {
+ background-color:orange;}
+ } 
+ 
+ <HTML>
+<HEAD>
+ <TITLE>Ví dụ 2</TITLE>
+ <meta charset="utf-8">
+ <STYLE TYPE="text/css">
+ UL#menudoc{list-styleimage:url('images/1arrow_forward_1.gif'); }
+ UL#menungang li {display:inline;}
+ ul#menungang {padding: 0;}
+ ul#menungang li a{
+ background-color: Blue;
+ color: white;
+ padding: 10px 20px;
+ text-decoration: none;
+ border-radius: 4px 4px 0 0;
+ }
+ ul#menungang li a:hover {
+ background-color: orange;
+ }
+ 
+ </STYLE>
+</HEAD>
+<BODY>
+ <UL id="menudoc">
+ <LI>VNUA</li>
+ <LI>Giới thiệu</li>
+ <LI>Bộ môn</li>
+ <LI>Phòng thí nghiệm</li>
+ </UL>
+ <H3>Menu dọc có màu BLUE, khi rê chuột vào từng mục chuyển màu
+ORANGE</H3>
+ <UL id="menungang">
+ <LI><a href="Gioithieu.html"> Lời giới thiệu</a></li>
+ <LI><a href="sinhvien.aspx">Sinh viên</a></li>
+ <LI><a href="giaotrinh.html">Giáo trình</a></li>
+ <LI><a href="lienhe.html">Liên hệ</a></li>
+
+ </UL>
+</BODY>
+</HTML> 
+
+<html>
+ <head>
+ <meta charset="utf-8" />
+ <title>Tiêu đề của trang</title>
+ <link rel="stylesheet" href="css\style_div.css" />
+ </head>
+ <body>
+ <div class="bao">
+ <div class="banner">
+ </div>
+ <div class="cottrai">
+ <br>
+ <li>Trang chủ</li>
+ <li>Tổ chức</li>
+ <li>Đào tạo</li>
+ <li>Nghiên cứu</li>
+ <li>Bộ môn </li> 
+ <li>Sinh viên</li>
+ <li>Đoàn thể</li >
+ <li>Cơ sở vật chất</li>
+ </div>
+
+ <div class="noidung">
+ <p align=center>Đây là phần nội dung chính</p>
+ </div>
+ <div class="footer">
+ <center>Khoa CNTT- Đại học Nông nghiêp Hà
+Nội<br>
+ Địa chỉ: Trâu Quỳ, Gia Lâm, Hà Nội
+ <br>Tel: 04.8766106, Fax: 04.276554
+ </center>
+ </div>
+ </div>
+ </body>
+</html> 
+CSS
+.bao {
+ width: 100%;
+}
+.banner {
+ width: 100%;
+ background:#A9A9A9;
+ float: right;
+ display: block;
+ background-image:url('images/banner.png');
+ height: 170px;
+}
+.cottrai {
+ width: 20%; 
+ float: left;
+ display: block;
+ background:#DCDCDC ;
+ height: 800px;
+}
+.noidung {
+ width: 80%;
+ float: left;
+ display: block;
+ babackground-image:url('images/bg.jpg');
+ height: 800px;
+}
+.footer {
+ width: 100%;
+ float: left;
+ background:#6495ED;
+ height:100px;
+ }
